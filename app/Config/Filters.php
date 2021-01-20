@@ -10,13 +10,14 @@ class Filters extends BaseConfig
 		'csrf'     => \CodeIgniter\Filters\CSRF::class,
 		'toolbar'  => \CodeIgniter\Filters\DebugToolbar::class,
 		'honeypot' => \CodeIgniter\Filters\Honeypot::class,
+		'auth'     => \App\Filters\Auth::class,
+		'cors'	   => \App\Filters\Cors::class
 	];
 
 	// Always applied before every request
 	public $globals = [
 		'before' => [
-			//'honeypot'
-			// 'csrf',
+			'cors',
 		],
 		'after'  => [
 			'toolbar',
