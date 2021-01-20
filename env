@@ -49,6 +49,8 @@ app.baseURL = 'https://cobasu.herokuapp.com/'
 # DATABASE
 #--------------------------------------------------------------------
 
+CLEARDB_DATABASE_URL = mysql://b36f543d8595b1:55036cb4@us-cdbr-east-03.cleardb.com/heroku_038ba31b1b9a3cd?reconnect=true
+
 database.default.hostname = us-cdbr-east-03.cleardb.com
 database.default.database = heroku_038ba31b1b9a3cd
 database.default.username = b36f543d8595b1
