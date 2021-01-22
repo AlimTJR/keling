@@ -49,13 +49,13 @@ app.baseURL = 'https://cobasu.herokuapp.com/'
 # DATABASE
 #--------------------------------------------------------------------
 
-CLEARDB_DATABASE_URL = mysql://b36f543d8595b1:55036cb4@us-cdbr-east-03.cleardb.com/heroku_038ba31b1b9a3cd?reconnect=true
+DATABASE_URL = postgres://pkfvecdvgvkykp:c85809cb6af2188d6ea1586e316746ce835140ae67618ebdf53e6fe47e8ad202@ec2-3-222-150-253.compute-1.amazonaws.com:5432/d5pobgt9gkba3c
 
-database.default.hostname = us-cdbr-east-03.cleardb.com
-database.default.database = heroku_038ba31b1b9a3cd
-database.default.username = b36f543d8595b1
-database.default.password = 55036cb4
-database.default.DBDriver = MySQLi
+database.default.hostname = ec2-3-222-150-253.compute-1.amazonaws.com
+database.default.database = postgresql-elliptical-52276
+database.default.username = pkfvecdvgvkykp
+database.default.password = c85809cb6af2188d6ea1586e316746ce835140ae67618ebdf53e6fe47e8ad202
+database.default.DBDriver = postgre
 
 # database.tests.hostname = localhost
 # database.tests.database = ci4
