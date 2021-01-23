@@ -53,7 +53,7 @@ database.default.hostname = ec2-3-220-98-137.compute-1.amazonaws.com
 database.default.database = d6u4gmbh5bnmng
 database.default.username = vvmkhsvzvtunhn
 database.default.password = 2dee9f2453f55efca439e4c71969e325aa3b839176951980b7db93344ad773e3
-database.default.DBDriver = postgre
+database.default.DBDriver = Postgre
 
 # database.tests.hostname = localhost
 # database.tests.database = ci4
