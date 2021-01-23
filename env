@@ -49,8 +49,6 @@ app.baseURL = 'https://cobasu.herokuapp.com/'
 # DATABASE
 #--------------------------------------------------------------------
 
-DATABASE_URL = postgres://vvmkhsvzvtunhn:2dee9f2453f55efca439e4c71969e325aa3b839176951980b7db93344ad773e3@ec2-3-220-98-137.compute-1.amazonaws.com:5432/d6u4gmbh5bnmng
-
 database.default.hostname = ec2-3-220-98-137.compute-1.amazonaws.com
 database.default.database = d6u4gmbh5bnmng
 database.default.username = vvmkhsvzvtunhn
