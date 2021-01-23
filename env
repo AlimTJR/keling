@@ -49,12 +49,12 @@ app.baseURL = 'https://cobasu.herokuapp.com/'
 # DATABASE
 #--------------------------------------------------------------------
 
-DATABASE_URL = postgres://pkfvecdvgvkykp:c85809cb6af2188d6ea1586e316746ce835140ae67618ebdf53e6fe47e8ad202@ec2-3-222-150-253.compute-1.amazonaws.com:5432/d5pobgt9gkba3c
+DATABASE_URL = postgres://vvmkhsvzvtunhn:2dee9f2453f55efca439e4c71969e325aa3b839176951980b7db93344ad773e3@ec2-3-220-98-137.compute-1.amazonaws.com:5432/d6u4gmbh5bnmng
 
-database.default.hostname = ec2-3-222-150-253.compute-1.amazonaws.com
-database.default.database = postgresql-elliptical-52276
-database.default.username = pkfvecdvgvkykp
-database.default.password = c85809cb6af2188d6ea1586e316746ce835140ae67618ebdf53e6fe47e8ad202
+database.default.hostname = ec2-3-220-98-137.compute-1.amazonaws.com
+database.default.database = d6u4gmbh5bnmng
+database.default.username = vvmkhsvzvtunhn
+database.default.password = 2dee9f2453f55efca439e4c71969e325aa3b839176951980b7db93344ad773e3
 database.default.DBDriver = postgre
 
 # database.tests.hostname = localhost

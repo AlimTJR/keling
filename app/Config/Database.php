@@ -30,12 +30,12 @@ class Database extends \CodeIgniter\Database\Config
 	 * @var array
 	 */
 	public $default = [
-		'DSN'      => '',
-		'hostname' => 'localhost',
-		'username' => 'root',
-		'password' => '',
-		'database' => 'kenallingkungan',
-		'DBDriver' => 'MySQLi',
+		'DSN'      => 'pgsql:host=ec2-3-220-98-137.compute-1.amazonaws.com;port=5432;dbname=d6u4gmbh5bnmng',
+		'hostname' => 'ec2-3-220-98-137.compute-1.amazonaws.com',
+		'username' => 'vvmkhsvzvtunhn',
+		'password' => '2dee9f2453f55efca439e4c71969e325aa3b839176951980b7db93344ad773e3',
+		'database' => 'd6u4gmbh5bnmng',
+		'DBDriver' => 'postgre',
 		'DBPrefix' => '',
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
