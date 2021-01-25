@@ -16,7 +16,7 @@ class Login extends Controller
         helper(['form']);
         session();
         $data = [
-            'title'      => 'Tambah Materi',
+            'title'      => 'Admin',
             'validation' => \Config\Services::validation()
         ];
         return view('login', $data);

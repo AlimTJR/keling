@@ -30,12 +30,12 @@ class Database extends \CodeIgniter\Database\Config
 	 * @var array
 	 */
 	public $default = [
-		'DSN'      => 'pgsql:host=ec2-3-220-98-137.compute-1.amazonaws.com;port=5432;dbname=d6u4gmbh5bnmng',
-		'hostname' => 'ec2-3-220-98-137.compute-1.amazonaws.com',
-		'username' => 'vvmkhsvzvtunhn',
-		'password' => '2dee9f2453f55efca439e4c71969e325aa3b839176951980b7db93344ad773e3',
-		'database' => 'd6u4gmbh5bnmng',
-		'DBDriver' => 'Postgre',
+		'DSN'      => '',
+		'hostname' => 'us-cdbr-east-03.cleardb.com',
+		'username' => 'bd273f9b5ba888',
+		'password' => 'eade737e',
+		'database' => 'heroku_6850cb6d3b2793b',
+		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
@@ -49,6 +49,33 @@ class Database extends \CodeIgniter\Database\Config
 		'strictOn' => false,
 		'failover' => [],
 		'port'     => 3306,
+	];
+
+	/**
+	 * The default database connection.
+	 *
+	 * @var array
+	 */
+	public $postgres = [
+		'DSN'      => '',
+		'hostname' => 'localhost',
+		'username' => 'postgres',
+		'password' => 'postgres',
+		'database' => 'd6u4gmbh5bnmng',
+		'DBDriver' => 'postgre',
+		'DBPrefix' => '',
+		'pConnect' => false,
+		'DBDebug'  => (ENVIRONMENT !== 'production'),
+		'cacheOn'  => false,
+		'cacheDir' => '',
+		'charset'  => 'utf8',
+		'DBCollat' => 'utf8_general_ci',
+		'swapPre'  => '',
+		'encrypt'  => false,
+		'compress' => false,
+		'strictOn' => false,
+		'failover' => [],
+		'port'     => 5432,
 	];
 
 	/**

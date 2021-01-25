@@ -152,7 +152,13 @@ class Dashboard extends Controller
     public function delete($id)
     {
         $materi = $this->materiModel->find($id);
-        unlink('images/'.$materi['foto']);
+        $path = 'images/'.$materi['foto'];
+        if (is_file($path)) {
+            // The path exists and is a file
+            unlink($path);
+        }else{
+            unlink($path);
+        }
         $this->materiModel->delete($id);
         return redirect()->to('/dashboard/materi');
     }
