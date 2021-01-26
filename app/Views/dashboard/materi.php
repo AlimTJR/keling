@@ -11,7 +11,7 @@
 				<div class="gambarkartu" style="background-image: url(/images/<?=$data['foto']?>);"></div>
 				<div class="content">
 					<b><p class="judulmateri"><?= $data['judul']; ?></p></b>
-					<p class="isimateri"><?= $data['materi']; ?></p>
+					<!-- <p class="isimateri"><?= $data['materi']; ?></p> -->
 					<p class="tag"><?= $data['kategori']; ?></p>
 					<p style="font-size: 12px;"><i class="fas fa-clock"></i> <?php $tanggal= date_create($data['created_at']); echo date_format($tanggal,"d M Y")?></p>
 					<div class="pilihan">

@@ -67,7 +67,7 @@
 		<label for="materi">Isi Materi</label>
 		<div class="inputform">
 			<textarea class="input" style="height: 300px;" type="text" name="materi" placeholder="Isi Materi"><?= $materi['materi']?></textarea>
-		</div>
+		</div><br>
 		<label for="kategori">kategori Materi</label>
 		<div class="inputform">
 			<input type="text" name="kategori" placeholder="isi dengan #hashtag" value="<?= $materi['kategori']?>">
@@ -83,4 +83,6 @@
 	</form>
 	</div>
     </div>
+	<script src="//cdn.ckeditor.com/4.15.1/basic/ckeditor.js"></script>
+	<script>CKEDITOR.replace('materi');</script>
 <?= $this->endSection(); ?>

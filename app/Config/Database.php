@@ -56,13 +56,13 @@ class Database extends \CodeIgniter\Database\Config
 	 *
 	 * @var array
 	 */
-	public $postgres = [
+	public $cadangan = [
 		'DSN'      => '',
 		'hostname' => 'localhost',
-		'username' => 'postgres',
-		'password' => 'postgres',
-		'database' => 'd6u4gmbh5bnmng',
-		'DBDriver' => 'postgre',
+		'username' => 'root',
+		'password' => '',
+		'database' => 'kenallingkungan',
+		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
@@ -75,7 +75,7 @@ class Database extends \CodeIgniter\Database\Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 5432,
+		'port'     => 3306,
 	];
 
 	/**

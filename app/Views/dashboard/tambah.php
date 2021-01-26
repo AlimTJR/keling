@@ -2,8 +2,8 @@
 <?= $this->section('content'); ?>
 <style>
 .container label{
-	font-weight: bold;
 	font-family: 'nunito', sans-serif;
+	font-weight: bold;
 	font-size: 13px;
 }
 .formlogin input{
@@ -27,24 +27,28 @@
 	width: 100%;
 }
 .menu{
-	margin-left: 5px;
 	margin-right: 5px;
+	margin-left: 5px;
 }
 .inputgambar{
 	justify-content: center;
 	display: flex;
 }
 .isigambar{
-	display: flex;
 	flex-direction: column;
 	align-items: center;
+	display: flex;
+}
+.textarea{
+	margin-bottom: 20px;
 }
 .isigambar img{
-	margin-top: 10px;
+    border: 1.5px solid rgb(34, 172, 67);
     margin-bottom: 10px;
-    width: 300px;
+	border-radius: 15px;
+	margin-top: 10px;
     height: 170px;
-    border: 1px solid rgb(34, 172, 67);
+    width: 300px;
     padding: 3px;
 }
 </style>
@@ -65,8 +69,8 @@
 		</div>
 		<label for="materi" class="<?= ($validation->hasError('materi')) ? 'merah' : ''; ?>">Isi Materi <?= $validation->getError('materi'); ?></label>
 		<div class="inputform">
-			<textarea class="input" style="height: 300px;" type="text" name="materi" placeholder="Isi Materi"><?= old('materi'); ?></textarea>
-		</div>
+			<textarea id="mytextarea" class="input textarea" style="height: 300px;" type="text" name="materi" placeholder="Isi Materi"><?= old('materi'); ?></textarea>
+		</div><br>
 		<label for="kategori" class="<?= ($validation->hasError('kategori')) ? 'merah' : ''; ?>">kategori Materi <?= $validation->getError('kategori'); ?></label>
 		<div class="inputform">
 			<input type="text" name="kategori" placeholder="isi dengan #hashtag" value="<?= old('kategori'); ?>">
@@ -82,4 +86,6 @@
 	</form>
 	</div>
     </div>
+	<script src="//cdn.ckeditor.com/4.15.1/basic/ckeditor.js"></script>
+	<script>CKEDITOR.replace('materi');</script>
 <?= $this->endSection(); ?>
