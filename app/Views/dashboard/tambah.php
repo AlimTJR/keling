@@ -86,6 +86,4 @@
 	</form>
 	</div>
     </div>
-	<script src="//cdn.ckeditor.com/4.15.1/basic/ckeditor.js"></script>
-	<script>CKEDITOR.replace('materi');</script>
 <?= $this->endSection(); ?>
